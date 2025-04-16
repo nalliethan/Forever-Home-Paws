@@ -1,0 +1,66 @@
+.guides{
+ /* padding-inline: 10%; 
+*/
+  min-height: 100vh;
+  padding-bottom: 5rem;
+  font-family: var(--font-main);
+}
+
+.guides-title{
+  padding-block: 20px;
+  text-align: center;
+  background-color: var(--pink-color);
+  color: white;
+  margin-bottom: 5rem;
+}
+
+.guides-title h1{
+  font-size: 2.5rem;
+}
+
+.guides-grid{
+  width: 80%;
+  margin-inline: auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
+  font-family: var(--font-secondary);
+}
+
+.guides-card{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 15px;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.2);
+}
+
+.guides-card img{
+  width: 20%;
+  display: block;
+  margin: 0 auto;
+}
+
+.guides-card p{
+  font-size: 1.2rem;
+  font-weight: 600;
+  text-align: center;
+}
+
+.guides-card ul .list{
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+}
+
+.guides-card ul .list .check-icon{
+  color: var(--pink-color);
+  font-size: 16px;
+}
+
+.guides-card ul li{
+  list-style: none;
+  font-size: 14px;
+  color: #4e4d4d;
+  flex: 1;
+}

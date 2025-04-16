@@ -1,0 +1,37 @@
+footer{
+  background: var(--pink-color);
+  padding:20px 8%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: white;
+}
+
+.footer-left{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+
+  font-size: 1.3rem;
+  cursor: pointer;
+}
+
+.nav-left .logo{
+  font-size: 1.5rem;
+}
+
+.footer-right ul{
+  display: flex;
+  gap: 24px;
+}
+
+.footer-right ul li{
+  list-style: none;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.footer-right ul li:hover{
+  color: rgb(122, 4, 4);
+}
