@@ -6,6 +6,7 @@ import cat_1 from '../../assets/cat_1.jpg'
 import cat_2 from '../../assets/cat_2.jpg'
 import rabbit_1 from '../../assets/rabbit_1.jpg'
 import rabbit_2 from '../../assets/rabbit_2.jpg'
+import { FaPaw } from "react-icons/fa6";
 
 const Adopt = () => {
   const adoptLists = [
@@ -72,8 +73,47 @@ const Adopt = () => {
   ]
 
   return (
-    <div>
-      
+    <div className='adopt'>
+        <h2>Adopt A Pet</h2>
+
+        <div className="adopt-card">
+          <div className="adopt-card-flex">
+            <img src={dog_1} alt="" />
+
+            <div className="adopt-info">
+              <dl>
+                <div className='data'>
+                  <dt>Name:</dt>
+                  <dd>Buddy</dd>
+                </div>
+                <div className='data'>
+                  <dt>Breed:</dt>
+                  <dd>Golden Retriever</dd>
+                </div>
+                <div className='data'>
+                  <dt>Age:</dt>
+                  <dd>2 years</dd>
+                </div>
+                <div className='data'>
+                  <dt>Gender:</dt>
+                  <dd>Male</dd>
+                </div>
+                <div className='data'>
+                  <dt>Personality:</dt>
+                  <dd>Playful, friendly, loves kids</dd>
+                </div>
+                <div className='data'>
+                  <dt>Adoption Fee:</dt>
+                  <dd>$20</dd>
+                </div>
+              </dl>
+            </div>
+          </div>
+          <button className='adopt-btn'>
+            Apply to Adopt
+            <FaPaw className='icon'/>
+          </button>
+        </div>
     </div>
   )
 }

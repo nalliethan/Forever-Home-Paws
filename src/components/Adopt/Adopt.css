@@ -1,0 +1,73 @@
+.adopt h2{
+    font-size: 2.5rem;
+    font-family: var(--font-main);
+    text-align: center;
+    padding-block: 30px;
+    background-color: var(--blue-color);
+    color: rgb(33, 32, 32);
+}
+
+.adopt-card{
+    margin:100px auto;
+    padding: 40px;
+    font-family: var(--font-secondary);
+    max-width: 60%;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.3);
+    position: relative;
+}
+
+.adopt-card-flex{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.adopt-card img{
+    width: 300px;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+.adopt-card .adopt-btn{
+    position: absolute;
+    left:40%;
+    padding: 18px 30px;
+    border-radius: 40px;
+    border: none;
+    font-size: 1.4rem;
+    font-weight: 600;
+    background-color: var(--bg-secondary);
+    color: white;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+
+    display: flex;
+    align-items: center;
+    transition: 0.3s ease;
+}
+
+.adopt-card .adopt-btn:hover{
+    transform: scale(1.05);
+    background-color: #ef831d;
+}
+
+.adopt-card .adopt-btn .icon{
+    margin-left: 15px;
+    font-size: 1.6rem;
+}
+
+.adopt-info .data{
+    display: flex;
+    font-size: 1.4rem;
+    margin-bottom: 12px;
+    max-width: 500px;
+}
+
+.adopt-info .data:nth-child(1){
+    margin-bottom: 40px;
+    font-size: 2rem;
+    font-weight: 600;
+    color: var(--pink-color);
+}
+

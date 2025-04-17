@@ -78,7 +78,7 @@ const Guides = () => {
   return (
     <div className='guides'>
       <div className="guides-title">
-        <h1>Pet Care Guides</h1>
+        <h2>Pet Care Guides</h2>
         <p>Learn how to take care of your pet like a pro!</p>
       </div>
       
