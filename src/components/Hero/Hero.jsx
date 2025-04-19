@@ -1,6 +1,7 @@
 import React from 'react'
 import './Hero.css'
 import heroImage from '../../assets/hero.jpg'
+import { Link } from 'react-scroll'
 
 const Hero = () => {
   return (
@@ -10,8 +11,17 @@ const Hero = () => {
       <p>Find your perfect furry friend today or learn how to give your pet the best care possible!</p>
 
       <div className="hero-btns">
-        <button>Adopt Now!</button>
-        <button className='light-btn'>Read Pet Care Tip</button>
+        <button>
+          <Link to='adopt' smooth={true} offset={-60} duration={400}>
+            Adopt Now!
+          </Link>
+        </button>
+
+        <button className='light-btn'>
+          <Link to='guides' smooth={true} offset={-60} duration={400}>
+            Read Pet Care Tip
+          </Link>
+        </button>
       </div>
       
       <img src={heroImage} alt="" />
