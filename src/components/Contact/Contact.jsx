@@ -4,6 +4,31 @@ import { FaInstagramSquare, FaFacebookSquare, FaTwitterSquare } from "react-icon
 import './Contact.css'
 
 const Contact = () => {
+  const [result, setResult] = React.useState("");
+
+  const onSubmit = async (event) => {
+    event.preventDefault();
+    setResult("Sending....");
+    const formData = new FormData(event.target);
+
+    formData.append("access_key", "1a9f2af3-d0bd-4bc7-bae1-67d8f05726a6");
+
+    const response = await fetch("https://api.web3forms.com/submit", {
+      method: "POST",
+      body: formData
+    });
+
+    const data = await response.json();
+
+    if (data.success) {
+      setResult("Form Submitted Successfully");
+      event.target.reset();
+    } else {
+      console.log("Error", data);
+      setResult(data.message);
+    }
+  };
+  
   return (
     <div className='contact'>
       <h1>Contact Us</h1>
@@ -35,7 +60,20 @@ const Contact = () => {
         </div>
 
         <div className="contact-right">
-          <h3>Form</h3>
+          <form onSubmit={onSubmit}>
+            <label>Your name</label>
+            <input type="text" name="name" placeholder='Enter your name' required/>
+
+            <label>Your email</label>
+            <input type="email" name="email" placeholder='Enter your mobile number' required/>
+
+            <label>Write your messages here</label>
+            <textarea name="message" placeholder='Enter your message' required></textarea>
+
+            <button type="submit">Submit Form</button>
+
+          </form>
+          <span>{result}</span>
         </div>
       </div>
       

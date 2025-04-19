@@ -53,3 +53,36 @@
 .contact-socials .icon{
   cursor: pointer;
 }
+
+.contact-right{
+  flex-basis: 48%;
+}
+
+.contact-right form{
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-right input,
+.contact-right textarea{
+  padding: 12px 20px;
+  outline: none;
+  border: none;
+  border-radius: 10px;
+  margin-block: 10px 20px;
+  font-size: 14px;
+  font-family: var(--font-secondary);
+  resize: none;
+}
+
+.contact-right form button{
+  padding: 10px 20px;
+  margin-inline: auto;
+  width: 140px;
+  border-radius: 20px;
+  border: none;
+  font-size: 15px;
+  cursor: pointer;
+  background-color: var(--pink-color);
+  color: white;
+}
