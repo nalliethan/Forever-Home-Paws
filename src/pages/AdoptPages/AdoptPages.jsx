@@ -1,8 +1,7 @@
 import React from 'react'
 import { useNavigate, useParams } from 'react-router-dom'
 import './AdoptPages.css'
-import {adoptLists} from '../assets/data.js'
-import dog_1 from '../assets/dog_1.jpg'
+import {adoptLists} from '../../assets/data.js'
 import { FaArrowLeft } from "react-icons/fa";
 
 const AdoptPages = () => {
