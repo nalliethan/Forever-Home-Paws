@@ -1,0 +1,99 @@
+.adoptpages{
+    background-color: var(--bg-primary);
+    font-family: var(--font-main);
+    min-height: 100vh;
+    padding: 20px 10%;
+    position: relative;
+}
+
+.adoptpages h1{
+    background-color: var(--pink-color);
+    color: white;
+    text-align: center;
+    padding-block: 10px;
+    margin-bottom: 30px;
+}
+
+.adoptpages .back-btn{
+    width: 40px;
+    height: 40px;
+    font-size: 20px;
+    padding-top: 4px;
+    border-radius: 50%;
+    background-color: var(--pink-color);
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s ease;
+
+    position: absolute;
+    top: 5%;
+    left: 5%;
+}
+
+.adoptpages .back-btn:hover,
+.detail-right form button:hover{
+    background-color: #ec3636;
+}
+
+.detail-flex{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-family: var(--font-secondary);
+}
+
+.detail-left{
+    flex-basis: 45%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.detail-left .detail-image{
+    width: 300px;
+    height: 400px;
+    margin: auto;
+}
+
+.detail-image img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+.detail-right{
+    flex-basis: 45%;
+}
+
+.detail-right form{
+    display: flex;
+    flex-direction: column;
+}
+  
+.detail-right input,
+.detail-right textarea{
+    padding: 12px 20px;
+    outline: none;
+    border: none;
+    border-radius: 10px;
+    margin-block: 10px 10px;
+    font-size: 14px;
+    font-family: var(--font-secondary);
+    resize: none;
+}
+  
+.detail-right form button{
+    padding: 10px 20px;
+    margin-inline: auto;
+    width: 140px;
+    border-radius: 20px;
+    border: none;
+    font-size: 15px;
+    cursor: pointer;
+    background-color: var(--pink-color);
+    color: white;
+    transition: 0.3s ease;
+}
