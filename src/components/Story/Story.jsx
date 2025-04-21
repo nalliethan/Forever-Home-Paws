@@ -63,7 +63,7 @@ const Story = () => {
 
                 <div className="story-card-text">
                   <q>{list.message}</q>
-                  <p className='name'><b>Adopted By:</b>{list.adoptBy}</p>
+                  <p className='name'><b>Adopted By: </b>{list.adoptBy}</p>
                 </div>
               </div>
 

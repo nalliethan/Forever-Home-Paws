@@ -88,3 +88,24 @@
     color: var(--pink-color);
 }
 
+
+@media (max-width:800px){
+    .adopt h2{
+        font-size: 2rem;
+    }
+
+    .adopt-grid{
+        grid-template-columns: repeat(1,1fr);
+    }
+
+    .adopt-image-wrapper{
+        width: 150px;
+        height: 200px;
+    }
+
+    .adopt-card-flex{
+        gap: 30px;
+    }
+}
+
+

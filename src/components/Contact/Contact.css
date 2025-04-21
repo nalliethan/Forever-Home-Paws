@@ -54,6 +54,10 @@
   cursor: pointer;
 }
 
+.contact-socials .icon:hover{
+  color: #ec3636;
+}
+
 .contact-right{
   flex-basis: 48%;
 }
@@ -85,4 +89,19 @@
   cursor: pointer;
   background-color: var(--pink-color);
   color: white;
+}
+
+
+.contact-right form button:hover
+{
+  background-color: #ec3636;
+}
+
+
+
+@media (max-width: 800px){
+  .contact-context{
+    flex-direction: column;
+    gap: 40px;
+  }
 }

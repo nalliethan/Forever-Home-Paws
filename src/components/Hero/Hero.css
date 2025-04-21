@@ -8,6 +8,7 @@
   height: 100vh;
   font-family: var(--font-main);
   background-color: var(--bg-primary);
+  position: relative;
 }
 
 .hero h1{
@@ -60,4 +61,34 @@
   height: 280px;
   width: 100%;
   object-fit: cover;
+}
+
+
+@media (max-width:800px){
+  .hero{
+    height: 550px;
+  }
+
+  .hero h1{
+    max-width: 400px;
+    font-size: 2.5rem;
+  }
+
+  .hero p{
+    max-width: 400px;
+    font-size: 1rem;
+  }
+
+  .hero-btns{
+    width: 350px;
+  }
+
+  .hero-btns button{
+    font-size: 1rem;
+  }
+
+  .hero img{
+    height: 150px;
+    bottom: 0px;
+  }
 }

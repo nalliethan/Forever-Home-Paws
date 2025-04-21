@@ -44,3 +44,33 @@ footer .copyright{
 .footer-right ul li:hover{
   color: rgb(122, 4, 4);
 }
+
+
+
+
+@media (max-width:800px){
+  footer{
+    padding:20px 4%;
+  }
+
+  .footer-left{
+    gap: 10px;
+    font-size: 1.1rem;
+  }
+
+  .footer-right ul{
+    gap: 12px;
+  }
+  
+  .footer-right ul li{
+    font-size: 1rem;
+  }
+}
+
+
+@media (max-width:600px){
+  .footer-content{
+    flex-direction: column;
+    gap: 10px;
+  }
+}

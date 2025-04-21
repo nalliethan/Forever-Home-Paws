@@ -1,10 +1,12 @@
 .story{
-    height: 600px;
+    /* height: 600px; */
     display: flex;
+    align-items: center;
 }
 
 .title{
     flex-basis: 18%;
+    height: 100vh;
     background-color: var(--bg-secondary);
     color: white;
     padding: 40px;
@@ -78,4 +80,79 @@
 .story-card .story-card-text .name{
     text-align: right;
     margin-top: 30px;
+}
+
+
+@media (max-width: 800px){
+    .title{
+        height: 500px;
+        padding: 20px;
+    }
+
+    .title h1{
+        font-size: 2rem;
+    }
+
+    .title p{
+        font-size: 1rem;
+    }
+
+    .story-wrapper{
+        gap: 10px;
+    }
+
+    .story-slider{
+        width: 450px;
+    }
+
+    .story-card{
+        /* margin: 0 20px; */
+        max-width: 400px;
+    }
+
+    .story-card-title{
+        padding-block: 10px;
+        font-size: 1rem;
+    }
+
+    .story-card-image img{
+        width: 180px;
+        height: 150px;
+    }
+
+    .story-card .story-card-text{
+        font-size: 1rem;
+    }
+
+    .story-wrapper button{
+        font-size: 1rem;
+    }
+}
+
+
+@media (max-width: 600px){
+    .story{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .title{
+        width: 100%;
+        padding-inline: 5%;
+        margin-bottom: 20px;
+    }
+
+    .title h1{
+        font-size: 1.75rem;
+        margin-bottom: 1rem;
+    }
+
+    .title p{
+        font-size: 0.75rem;
+    }
+
+    .story-wrapper{
+        width: 100%;
+        justify-content: center;
+    }
 }
