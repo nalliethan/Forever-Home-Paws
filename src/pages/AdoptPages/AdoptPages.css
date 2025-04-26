@@ -130,3 +130,10 @@
         justify-content: center;
     }
 }
+
+@media (max-width:500px){
+    .adoptpages h1{
+        font-size: 1.2rem;
+        margin-inline: 30px;
+    }
+}

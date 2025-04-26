@@ -26,7 +26,7 @@
 .adopt-card-flex{
     display: flex;
     align-items: center;
-    gap: 10px;
+    gap: 20px;
 }
 
 .adopt-image-wrapper{
@@ -102,9 +102,44 @@
         width: 150px;
         height: 200px;
     }
+}
+
+@media (max-width:500px){
+    .adopt h2{
+        font-size: 1.75rem;
+    }
+
+
+    .adopt-card{
+        padding: 5px;
+        max-width: 360px;
+    }
 
     .adopt-card-flex{
-        gap: 30px;
+        gap: 10px;
+    }
+
+    .adopt-image-wrapper{
+        width: 120px;
+        height: 180px;
+    }
+
+    .adopt-info .data{
+        font-size: 0.75rem;
+        width: 100%;
+        max-width: 200px;
+    }
+    
+    .adopt-info .data:nth-child(1){
+        margin-bottom: 8px;
+        font-size: 1.2rem;
+    }
+
+    .adopt-card .adopt-btn{
+        left:20%;
+        bottom: -35px;
+        padding: 5px 20px;
+        font-size: 1rem;
     }
 }
 
